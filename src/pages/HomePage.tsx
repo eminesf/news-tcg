@@ -6,7 +6,7 @@ export function HomePage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/construction");
+    navigate("/construcao");
   }, [navigate]);
 
   return (
