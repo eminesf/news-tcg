@@ -1,14 +1,10 @@
-import "./App.css";
-import { Button } from "@/components/ui/button";
-import { Header } from "@/components/Header";
+import { useRoutes } from "react-router-dom";
+
+import routes from "./routes/public.routes";
 
 function App() {
-  return (
-    <div className="flex items-center justify-center h-screen">
-      <Button variant="destructive">Click me</Button>
-      <Header />
-    </div>
-  );
+  const routing = useRoutes(routes);
+  return <>{routing}</>;
 }
 
 export default App;
